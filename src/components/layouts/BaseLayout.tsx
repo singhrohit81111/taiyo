@@ -35,7 +35,7 @@ export default function BaseLayout() {
             Charts and Maps
           </Link>
         </aside>
-        <article className="basis-[70%] h-full">
+        <article className="flex-1 flex items-center h-full">
           <Outlet />
         </article>
       </main>
