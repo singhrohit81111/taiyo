@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
-import { CHARTS_AND_MAPS, CONATCTS } from "../../config/pathName";
+import { CHARTS_AND_MAPS, CONTACTS } from "../../config/pathName";
 import { useMemo } from "react";
 
 export default function BaseLayout() {
@@ -23,7 +23,7 @@ export default function BaseLayout() {
       <main className="flex min-h-[90vh]">
         <aside className="flex flex-col basis-1/4 md:basis-1/5 lg:basis-1/6 p-4 bg-gray-200 text-gray-900 border-r border-gray-300">
           <Link
-            to={CONATCTS}
+            to={CONTACTS}
             className="text-lg mb-4 hover:text-gray-700 transition-colors duration-200"
           >
             Contacts
