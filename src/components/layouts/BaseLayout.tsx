@@ -20,7 +20,7 @@ export default function BaseLayout() {
       <header className="h-[10vh] flex items-center justify-center bg-gray-400 text-white text-xl font-semibold shadow-md">
         {headerValue}
       </header>
-      <main className="flex h-[90vh]">
+      <main className="flex min-h-[90vh]">
         <aside className="flex flex-col basis-1/4 md:basis-1/5 lg:basis-1/6 p-4 bg-gray-200 text-gray-900 border-r border-gray-300">
           <Link
             to={CONATCTS}
@@ -35,7 +35,7 @@ export default function BaseLayout() {
             Charts and Maps
           </Link>
         </aside>
-        <article className="flex-1 flex items-center h-full">
+        <article className="flex-1 flex items-center ">
           <Outlet />
         </article>
       </main>
