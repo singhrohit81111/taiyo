@@ -21,7 +21,7 @@ const CareerProfile: React.FC<CareerProfileProps> = () => {
 
   return (
     <div className="flex-1 max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
-      <h1 className="text-2xl font-bold mb-6 text-gray-800">Career Profile</h1>
+      <h1 className="text-2xl font-bold mb-6 text-gray-800">Create Contact</h1>
       <form className="space-y-4">
         <div>
           <label className="block text-gray-700 font-medium mb-1">First Name:</label>
