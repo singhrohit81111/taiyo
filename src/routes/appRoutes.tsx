@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import BaseLayout from '../components/layouts/BaseLayout'
 import Contacts from "../pages/Contacts";
 import ChartsAndMaps from "../pages/ChartsAndMaps";
-import { CHARTS_AND_MAPS, CONATCTS, CRAETE_CONATCT } from "../config/pathName";
+import { CHARTS_AND_MAPS, CONTACTS, CRAETE_CONTACT } from "../config/pathName";
 import CreateContact from "../pages/CreateContact";
 
 const routes = createBrowserRouter([
@@ -12,7 +12,7 @@ const routes = createBrowserRouter([
   children:[
     {
       index:true,
-      path:CONATCTS,
+      path:CONTACTS,
       element:<Contacts/>
     },
     {
@@ -20,7 +20,7 @@ const routes = createBrowserRouter([
       element:<ChartsAndMaps/>
     },
     {
-      path:CRAETE_CONATCT,
+      path:CRAETE_CONTACT,
       element:<CreateContact/>
     }
   ]

@@ -2,12 +2,17 @@
 import React from "react";
 import ContactCard from "../../components/common/ContactCard";
 import { cardData } from "../../config/constants";
+import { useNavigate } from "react-router-dom";
+import { CRAETE_CONTACT } from "../../config/pathName";
 
 const CardList: React.FC = () => {
+  const navigate=useNavigate();
   return (
     <div className="flex-1">
         <div className="flex justify-center mt-4">
-        <button className="bg-blue-500 text-white text-lg md:text-xl lg:text-2xl p-3 md:p-4 rounded-md border-2 border-transparent hover:bg-blue-600 transition-colors duration-300">
+        <button className="bg-blue-500 text-white text-lg md:text-xl lg:text-2xl p-3 md:p-4 rounded-md border-2 border-transparent hover:bg-blue-600 transition-colors duration-300"
+        onClick={()=>navigate(`${CRAETE_CONTACT}`)}
+        >
           Create Contact
         </button>
       </div>
